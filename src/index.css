@@ -1,0 +1,60 @@
+/* @import "tailwindcss/preflight";
+@tailwind utilities; */
+@import "tailwindcss";
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+html {
+  scroll-behavior: auto !important;
+  scroll-padding-top: 3rem;
+}
+@layer utilities {
+  .container {
+    padding: 0 1rem;
+    max-width: 1280px;
+    @media (width >= 40rem) {
+      padding: 0 1.5rem;
+    }
+    @media (width >= 48rem) {
+      padding: 0 2rem;
+    }
+    @media (width >= 64rem) {
+      padding: 0 2.5rem;
+    }
+    @media (width >= 80rem) {
+      padding: 0 3rem;
+    }
+    @media (width >= 96rem) {
+      padding: 0 3.5rem;
+    }
+  }
+}
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
